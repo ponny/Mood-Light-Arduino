@@ -63,7 +63,7 @@ RGB[2] = power * abs(sin((x + (2 * PI) / 3) * (CommonMathVariable))); // Blue LE
 ambientLight = analogRead(ldrPin);
 // This reads the light in the room and stores it as a number.
 
-if (ambientLight > 600) {
+if (ambientLight > 200) {
 // This ‘if statement’ will make the lamp turn on only if it is dark. The darker it is, the higher the number. 
 analogWrite (redLed,RGB[0]);
 analogWrite (greenLed,RGB[1]);
